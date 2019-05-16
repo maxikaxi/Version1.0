@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/Home"
+        android:icon="@drawable/ic_home"
+        android:title="Home"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/Schlaf"
+        android:icon="@drawable/ic_schlaf"
+        android:title="Schlaf"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/Puls"
+        android:icon="@drawable/ic_puls"
+        android:title="Puls"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/Profil"
+        android:icon="@drawable/ic_face_black_24dp"
+        android:title="Profil"
+        app:showAsAction="always"/>
+
+
+
+</menu>

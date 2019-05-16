@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <ImageButton
+        android:id="@+id/Lifebatterie"
+        android:contentDescription="Lebensenergie in Batterieform"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/batterie_gross"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:onClick="openToastLebensenergie"
+        />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lebensenergie-Grafik"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="155dp"
+
+        />
+
+    <ImageButton
+        android:id="@+id/Pulsanzeige"
+        android:contentDescription="Pulsanzeige"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250dp"
+        android:onClick="openToastPuls"
+        android:src="@drawable/puls_gross"
+        android:tooltipText="Pulsanzeige" />
+
+    <TextView
+        android:id="@+id/PulsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Puls bzw. Herzratenvariabilität"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="350dp" />
+
+    <ImageButton
+        android:id="@+id/Schrittanzahl"
+        android:contentDescription="Schrittanzahl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="400dp"
+        android:onClick="openToastSchritte"
+        android:src="@drawable/schritte"
+        android:tooltipText="Schrittanzahl" />
+
+    <TextView
+        android:id="@+id/Schritte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Schrittanzahl"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="490dp" />
+
+    <Button
+        android:id="@+id/hinzu_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button" />
+
+
+</RelativeLayout>
