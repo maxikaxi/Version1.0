@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity implements
     public static FragmentManager fragmentManager;
     public static MyAppDatabase myAppDatabase;
 
-    private static final int REQUEST_OAUTH = 1;
+    public static final int USER_AUTHORISED_REQUEST_CODE = 1;
     private static final String AUTH_PENDING = "auth_state_pending";
     private boolean authInProgress = false;
     private GoogleApiClient mGoogleApiClient;
@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity implements
                     .addApi(Fitness.HISTORY_API)
                     .addScope(new Scope(Scopes.FITNESS_ACTIVITY_READ_WRITE))
                     .addConnectionCallbacks(this)
-                    .enableAutoManage(this, 0, this)
+                    .enableAutoManage(this, USER_AUTHORISED_REQUEST_CODE, this)
                     .build();
         }
 
